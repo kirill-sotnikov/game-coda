@@ -32,7 +32,10 @@ export default function Enemy(prop: {
       prop.gameIsLosed();
     }
     if (topPosition > 260 && topPosition < 277) {
-      if (leftPosition >= prop.left && leftPosition + 10 <= prop.left + 30) {
+      if (
+        (leftPosition >= prop.left && leftPosition <= prop.left + 30) ||
+        (leftPosition + 10 >= prop.left && leftPosition + 10 <= prop.left + 30)
+      ) {
         console.log("delete");
         prop.deleteItem(prop.id);
       }

@@ -13,7 +13,6 @@ function App() {
     { id: 3, status: true },
     { id: 4, status: true },
     { id: 5, status: true },
-    { id: 6, status: true },
   ]);
   function generateItem() {
     setAllEnemy((state) => [...state, { id: Date.now(), status: true }]);
@@ -87,16 +86,19 @@ function App() {
       </>
     );
   }
-  window.addEventListener("keydown", (e) => {
-    const buttonDown = e.key;
-    if (buttonDown === "d") {
-      goRight();
-    } else if (buttonDown === "a") {
-      goLeft();
-    }
-  });
+
   return (
-    <div className="App">
+    <div
+      className="App"
+      onKeyDown={(e) => {
+        console.log(e.key);
+        if (e.key === "a" || e.key === "ф") {
+          goLeft();
+        } else if (e.key === "d" || e.key === "в") {
+          goRight();
+        }
+      }}
+    >
       <div>
         <p style={{ color: "green" }}>SCORE: {score}</p>
       </div>
@@ -125,6 +127,13 @@ function App() {
           Right
         </button>
       </div>
+      <button
+        className="controleButton"
+        style={{ marginTop: 20 }}
+        onClick={goRight}
+      >
+        use keybord
+      </button>
     </div>
   );
 }
