@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/game-coda.io/static/css/main.bef76cf7.css",
-    "main.js": "/game-coda.io/static/js/main.63e15b66.js",
-    "index.html": "/game-coda.io/index.html",
-    "main.bef76cf7.css.map": "/game-coda.io/static/css/main.bef76cf7.css.map",
-    "main.63e15b66.js.map": "/game-coda.io/static/js/main.63e15b66.js.map"
+    "main.css": "/game-coda/static/css/main.bef76cf7.css",
+    "main.js": "/game-coda/static/js/main.63e15b66.js",
+    "index.html": "/game-coda/index.html",
+    "main.bef76cf7.css.map": "/game-coda/static/css/main.bef76cf7.css.map",
+    "main.63e15b66.js.map": "/game-coda/static/js/main.63e15b66.js.map"
   },
   "entrypoints": [
     "static/css/main.bef76cf7.css",
